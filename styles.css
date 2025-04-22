@@ -7,12 +7,13 @@
   font-size: 24px;
   font-weight: bold;
 }
-h1 {
-  font-size: 50px;
-}
-.navbar {
-  background-color: #062531;
+
+.header {
+  background-color: #061521;
   color: #eeeeee;
+}
+
+.navbar {
   font-size: 16px;
   display: flex;
   justify-content: space-around;
@@ -26,30 +27,42 @@ h1 {
   list-style-type: none;
 }
 
-.post-navbar {
+.header-body {
   display: flex;
-  margin: 20px;
-  gap: 40px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 100px;
+  gap: 16px;
+  justify-content: space-around;
+  overflow: hidden;
 }
 
-.left-side,
-.right-side {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 400px;
-  height: 400px;
+.title {
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.img {
-  background-color: gray;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sign-up {
+  background-color: #3882f6;
   color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+}
+
+.hb-left,
+.hb-right {
+  max-width: calc(50% - 100px + 16px * 2);
+  min-width: 300px;
+  height: 250px;
+  max-height: 250px;
+}
+
+.hb-img {
+  max-width: auto;
+  height: 100%;
+}
+
+.hb-right {
+  overflow: hidden;
 }
